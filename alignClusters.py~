@@ -1,0 +1,28 @@
+#!/usr/bin/python
+
+# First arguement is path to input .dnaclust file
+# Second argument is the interval of the number of sequences in an accepted cluster
+#      Format is [a,b] where the number of sequences in a cluster is a <= n <= b
+#      If a is less than b, then the values will be switched
+#      To specify an unbounded interval such as a<=n use [a,] likewise for n<=b use [,b]
+# Third argument specifies whether files should be printed to standard output or 
+# printed into one file per cluster. "p" for print "f" for file. Printing is default.
+# Fourth argument argument is path to output directory. If one is needed and not given, 
+# the directory containing the script will be used
+
+import os
+import sys
+
+# verify the arguments and parse them
+if len(sys.argv) < 3:
+   print "A minimum of three arguments must be given. The format is as follows:\nFirst arguement is path to input .dnaclust file\nSecond argument is the interval of the number of sequences in an accepted cluster\n\tFormat is [a,b] where the number of sequences in a cluster is a<=n<=b\nThird argument specifies whether files should be printed to standard output or\n printed into one file per cluster. 'p' for print 'f' for file. Printing is default.\nFourth argument argument is path to output directory."
+
+filePath = str(sys.argv[1])
+print("second argument: "+sys.argv[2])
+tokens = sys.argv[2][1:len(sys.argv[2])-1].split(",")
+lowerBound = float(tokens[0])
+upperBound = float(tokens[1])
+
+
+
+

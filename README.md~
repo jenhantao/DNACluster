@@ -36,6 +36,3 @@ example of clustalw format
 (http://www.ebi.ac.uk/Tools/services/web_clustalw2/toolresult.ebi?tool=clustalw2&jobId=clustalw2-I20120915-184728-0093-65193372-pg)
 note how the matches/mismatches are explicitly stated, unlike in fasta
 alignment format
-
-for muscle executable
-http://www.drive5.com/muscle/
