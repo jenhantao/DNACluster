@@ -56,7 +56,7 @@ for line in inputFileLines:
       numFiles = numFiles +1
       numberInCluster = float(line.rstrip("\n")[1:])
       if (numberInCluster >= lowerBound and numberInCluster <= upperBound) and outputFile:
-         file = open(outputFileDirectory+"/cluster_"+str(clusterCount)+".fasta", 'w+')
+         file = open(outputFileDirectory+"/cluster_"+str(clusterCount)+"_"+str(int(numberInCluster))+".fasta", 'w+')
          clusterCount = clusterCount +1
    elif numberInCluster >= lowerBound and numberInCluster <= upperBound:
       if len(line)>0:
